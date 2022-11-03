@@ -1,15 +1,8 @@
 function prime(num){
-	let count=0;
-	 for(let x=1 ; x<=num ; x++ ){
-		if(num%x==0){
-			count++
-		}
-	 }
-	
-	if(count==2){
-		return  ture;
-	}else{
-		return false;
-	}
-	
-	 }console.log(prime(18));
+	for(let i=2;i*i<num;i++){
+	if(num%i===0) return false;
+	}	
+	return true;
+}
+console.log(prime(18));
+
