@@ -4,3 +4,5 @@ function prime(num){
 	}	
 	return true;
 }
+console.log(prime(18));
+
